@@ -9,3 +9,6 @@ datasource db {
   directUrl = env("DIRECT_URL")
   schemas   = ["auth", "public"] /// need to add "auth" in order to use supabase Auth
 }
+
+/// npx prisma db pull -> To get schema of db
+/// npx prisma generate -> To create prisma client based on exact db schema
