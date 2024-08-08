@@ -1,11 +1,11 @@
 generator client {
   provider        = "prisma-client-js"
-  previewFeatures = ["multiSchema"]
+  previewFeatures = ["multiSchema"] /// need to add "multiSchema" in order to use supabase Auth
 }
 
 datasource db {
   provider  = "postgresql"
   url       = env("DATABASE_URL")
   directUrl = env("DIRECT_URL")
-  schemas   = ["auth", "public"]
+  schemas   = ["auth", "public"] /// need to add "auth" in order to use supabase Auth
 }
