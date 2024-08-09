@@ -39,7 +39,7 @@ export default async function Login({
         <CardContent className="flex flex-col gap-4">
           <form id="login-form" className="grid gap-4">
             <div className="grid gap-2">
-              <Label htmlFor="email">이메일</Label>
+              <Label htmlFor="email">Email</Label>
               <Input
                 id="email"
                 name="email"
