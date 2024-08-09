@@ -12,3 +12,4 @@ yarn-error.log
 npm-debug.log
 
 .env.*
+*.apps.googleusercontent.com.json
