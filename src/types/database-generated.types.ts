@@ -12,18 +12,36 @@ export type Database = {
     Tables: {
       profile: {
         Row: {
+          age: string | null;
           created_at: string;
+          gender: Database["public"]["Enums"]["gender"] | null;
           id: number;
+          is_active: boolean | null;
+          job: string | null;
+          name: string | null;
+          profile_image_url: string | null;
           user_id: string | null;
         };
         Insert: {
+          age?: string | null;
           created_at?: string;
+          gender?: Database["public"]["Enums"]["gender"] | null;
           id?: number;
+          is_active?: boolean | null;
+          job?: string | null;
+          name?: string | null;
+          profile_image_url?: string | null;
           user_id?: string | null;
         };
         Update: {
+          age?: string | null;
           created_at?: string;
+          gender?: Database["public"]["Enums"]["gender"] | null;
           id?: number;
+          is_active?: boolean | null;
+          job?: string | null;
+          name?: string | null;
+          profile_image_url?: string | null;
           user_id?: string | null;
         };
         Relationships: [
@@ -44,7 +62,7 @@ export type Database = {
       [_ in never]: never;
     };
     Enums: {
-      [_ in never]: never;
+      gender: "MALE" | "FEMALE";
     };
     CompositeTypes: {
       [_ in never]: never;
