@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/components/common/Provider";
 import { Navbar } from "@/components/layout/navbar";
+import { ToastAlert } from "@/components/layout/toast-alert";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
           <main className="min-h-screen w-full flex flex-col items-center bg-slate-300">
             <Navbar />
             {children}
+            <ToastAlert />
           </main>
         </body>
       </Providers>
