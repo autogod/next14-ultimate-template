@@ -11,6 +11,6 @@ public
 yarn-error.log
 npm-debug.log
 
-.env
 .env.*
+.env
 *.apps.googleusercontent.com.json
