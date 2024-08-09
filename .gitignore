@@ -10,3 +10,10 @@ public
 .next
 yarn-error.log
 npm-debug.log
+
+
+# Ignore all files inside the /src/components/ui directory
+/src/components/ui/*
+
+# But do not ignore the ui directory itself
+!/src/components/ui/
