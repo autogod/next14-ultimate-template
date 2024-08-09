@@ -18,4 +18,4 @@ npm-debug.log
 # But do not ignore the ui directory itself
 !/src/components/ui/
 
-.git*
+.env.*
