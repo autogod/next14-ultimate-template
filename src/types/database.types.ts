@@ -1,3 +1,6 @@
+// npx suapbase login --token SUPABASE_ACCESS_TOKEN
+// npx supabase gen types typescript --project-id fvxtczopqbseywhbnxdt > src/types/database-generated.types.ts
+
 import { MergeDeep } from "type-fest";
 import { Database as DatabaseGenerated } from "./database-generated.types";
 export type { Json } from "./database-generated.types";
