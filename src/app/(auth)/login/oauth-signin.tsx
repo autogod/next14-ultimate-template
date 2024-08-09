@@ -10,7 +10,11 @@ type OAuthProvider = {
   icon?: JSX.Element;
 };
 
-export function OAuthButtons() {
+export function OAuthButtons({
+  lastSignedInMethod,
+}: {
+  lastSignedInMethod?: string;
+}) {
   const oAuthProviders: OAuthProvider[] = [
     {
       name: "google",
@@ -24,14 +28,20 @@ export function OAuthButtons() {
       {oAuthProviders.map((provider) => (
         <Button
           key={provider.name}
-          className="w-full flex items-center justify-center gap-2"
+          className="relative w-full flex items-center justify-center gap-2"
           variant="outline"
           onClick={async () => {
             await oAuthSignIn(provider.name);
           }}
         >
           {provider.icon}
-          {provider.displayName} 로그인하기
+          Login with {provider.displayName}
+          {lastSignedInMethod === "google" && (
+            <div className="absolute top-1/2 -translate-y-1/2 left-full whitespace-nowrap ml-8 bg-accent px-4 py-1 rounded-md text-xs text-foreground/80">
+              <div className="absolute -left-5 top-0 border-background border-[12px] border-r-accent" />
+              Recently signed in
+            </div>
+          )}
         </Button>
       ))}
     </>
