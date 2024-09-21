@@ -60,20 +60,17 @@ Get started with these steps:
 1. **Clone the repository**: `git clone <repo-url>`
 2. **Install dependencies**: `npm install`
 3. **Rename the project**: Customize your project name.
-4. **Configure Supabase**:
-   - Sign up for Supabase and set the URL.
-   - Run `npx prisma` for initial setup.
-5. **Download Shadcn Components**: `npm run shadcn` (optional).
-6. **Configure Supabase Email Auth**:
+4. **Download Shadcn Components**: `npm run shadcn` (optional).
+5. **Configure Supabase Email Auth**:
    - Set the site URL and redirection URL.
    - Configure SMTP (Resend).
    - Set email OTP expiry to 3600 seconds.
    - Customize the email template.
-7. **Configure Google OAuth**:
+6. **Configure Google OAuth**:
    - Set up the Google Consent Screen.
    - Configure the API and redirection URLs.
-8. **Set Legal Pages**: Configure your privacy policy and terms of service.
-9. **Deploy to Vercel**:
+7. **Set Legal Pages**: Configure your privacy policy and terms of service.
+8. **Deploy to Vercel**:
    - Set up Vercel-Supabase integration for automatic environment variable management.
    - Manually configure Supabase-Prisma environment variables as needed.
 
